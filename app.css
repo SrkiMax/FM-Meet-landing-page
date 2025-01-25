@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    //border: 2px solid black;
 }
 
 
@@ -60,9 +59,6 @@ body {
     margin: 0px auto;
 }
 
-//header {
-margin-top: 80px;
-}
 
 .logo {
     margin-top: 80px;
@@ -72,17 +68,11 @@ margin-top: 80px;
 .section-one {
     margin-top: 64px;
     justify-content: space-between;
-
-
-    //padding: 64px 0 64px 0;
-
 }
 
 
 .image-left img {
     margin-left: -35px;
-
-
 
 }
 
@@ -90,7 +80,6 @@ margin-top: 80px;
     margin-right: -35px
 }
 
-.buttons-section {}
 
 /* Button Styles */
 
@@ -149,7 +138,6 @@ margin-top: 80px;
     color: var(--Slate-600);
     text-align: center;
     margin: 32px 0;
-
 }
 
 
@@ -173,12 +161,10 @@ h1 {
     width: 1px;
     color: #28283D;
     background-color: var(--Slate-300);
-
 }
 
 .line-1 {
     margin: 144px auto 0 auto;
-
 }
 
 .circle {
@@ -193,7 +179,6 @@ h1 {
     align-items: center;
     color: var(--Slate-600);
     font-weight: 900;
-
 }
 
 .section-two {
@@ -201,8 +186,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding-bottom: 72px;
-
-
 }
 
 .image-gallery {
@@ -216,7 +199,6 @@ h1 {
 .image-gallery img {
     max-width: 256px;
     border-radius: 7px;
-
 }
 
 .feature-content {
@@ -224,7 +206,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     max-width: 544px;
-
 }
 
 .title {
@@ -262,7 +243,6 @@ h1 {
 
 
 footer {
-
     display: flex;
     justify-content: center;
     padding: 112px;
@@ -272,9 +252,6 @@ footer {
     background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(assets/desktop/image-footer.jpg);
     background-size: cover;
     background-position: center;
-    //background-repeat: repeat;
-
-
 
 }
 
@@ -284,14 +261,11 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: 1120px;
-
 }
 
 footer h2 {
-
     font-weight: 900;
     max-width: 445px;
-
 }
 
 footer h2,
@@ -304,10 +278,6 @@ footer h2,
     max-width: 355px;
 }
 
-footer .btn {
-    //margin-top: 20px;
-
-}
 
 
 @media (max-width: 1300px) {
@@ -323,15 +293,12 @@ footer .btn {
 
 
 
-
 @media (max-width: 1068px) {
 
     .section-one {
         justify-content: center;
         flex-wrap: wrap;
-
     }
-
 
     .image-left picture img {
         width: 100%;
@@ -348,7 +315,6 @@ footer .btn {
     .group-chat h1 {
         font-size: 48px;
     }
-
 
     .buttons-section {
         display: flex;
@@ -373,8 +339,6 @@ footer .btn {
         max-width: 152px;
     }
 
-
-
     .footer-info-box {
         flex-direction: column;
         width: 90%;
@@ -398,9 +362,7 @@ footer .btn {
         margin: 25px;
     }
 
-    footer .btn {
-        //margin-top: 20px;
-    }
+
 
     .button-purple {
         min-width: 193px;
@@ -412,24 +374,86 @@ footer .btn {
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 635px) {
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 311px;
+    }
+
+    .image-gallery img {
+        max-width: 147px;
+    }
+
+    .image-gallery .pic3,
+    .image-gallery .pic4 {
+        margin-top: 16px;
+    }
+}
+
+@media(max-width:550px) {
+    .buttons-section {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media (max-width:456px) {
 
     .group-chat h1 {
         font-size: 32px;
         margin-top: 48px;
     }
 
-
-    /* CHANGE THIS CODE BELOW!!! */
-    /* CHANGE THIS CODE BELOW!!! */
-    /* CHANGE THIS CODE BELOW!!! */
-    /* CHANGE THIS CODE BELOW!!! */
     .group-chat p {
-        max-width: 100px;
+        width: 270px;
 
     }
 
-
+    .buttons-section .button-short {
+        margin-top: 10px;
+    }
 }
 
-//overflow-wrap: break-word;
+@media (max-width: 350px) {
+
+
+    .image-gallery {
+        max-width: 270px;
+    }
+
+    .image-gallery img {
+        max-width: 130px;
+    }
+
+
+    .image-gallery .pic3,
+    .image-gallery .pic4 {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 250px;
+        justify-content: center;
+    }
+
+    .image-gallery img {
+        max-width: 120px;
+    }
+
+    .image-gallery .pic1,
+    .image-gallery .pic2,
+    .image-gallery .pic3,
+    .image-gallery .pic4 {
+        margin-top: 10px;
+    }
+}
