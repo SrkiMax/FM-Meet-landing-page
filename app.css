@@ -320,7 +320,7 @@ footer h2,
 
 
 @media (max-width: 1140px) {
-    /* @media (max-width: 1068px) { */
+
 
     .section-one {
         justify-content: center;
@@ -407,6 +407,18 @@ footer h2,
 
         background-size: cover;
         background-position: center;
+    }
+
+    .overline {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .text-2 {
+        font-size: 16px;
     }
 
 }
