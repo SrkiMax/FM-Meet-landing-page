@@ -134,6 +134,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -25px;
 }
 
 .group-chat .text {
@@ -288,33 +289,6 @@ footer h2,
     .buttons-section {
         display: flex;
     }
-
-    //.section-one {
-
-    //max-width: 120% !important;
-    //margin-right: 150px !important;
-    margin: 0 auto 0 auto !important;
-}
-
-/*.image-left {
-    display: flex;
-    max-width: 80%;
-}
-
-.image-right {}
-
-.group-chat h1 {
-    font-size: 48px;
-    margin-top: 72px;
-}
-
-
-.buttons-section {
-    display: flex;
-    flex-direction: row;
-    min-width: 371px;
-}
-   */
 }
 
 
