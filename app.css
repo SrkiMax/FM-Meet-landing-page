@@ -68,12 +68,15 @@ body {
 .section-one {
     margin-top: 64px;
     justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    //max-width: 120% !important;
+    //margin-right: 150px !important;
 }
 
 
 .image-left img {
     margin-left: -35px;
-
 }
 
 .image-right img {
@@ -101,7 +104,9 @@ body {
 }
 
 .button-short {
-    width: 161px;
+    min-width: 161px !important;
+    flex-basis: 161px;
+
 }
 
 .button-blue {
@@ -123,8 +128,6 @@ body {
 .btn span {
     color: var(--Cyan-300);
 }
-
-
 
 .group-chat {
     display: flex;
@@ -164,7 +167,7 @@ h1 {
 }
 
 .line-1 {
-    margin: 144px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .circle {
@@ -185,6 +188,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 56px;
     padding-bottom: 72px;
 }
 
@@ -285,24 +289,49 @@ footer h2,
         display: flex;
     }
 
-    .button-short {
-        width: 161px;
-    }
+    //.section-one {
+
+    //max-width: 120% !important;
+    //margin-right: 150px !important;
+    margin: 0 auto 0 auto !important;
+}
+
+/*.image-left {
+    display: flex;
+    max-width: 80%;
+}
+
+.image-right {}
+
+.group-chat h1 {
+    font-size: 48px;
+    margin-top: 72px;
+}
+
+
+.buttons-section {
+    display: flex;
+    flex-direction: row;
+    min-width: 371px;
+}
+   */
 }
 
 
 
-
-@media (max-width: 1068px) {
+@media (max-width: 1140px) {
+    /* @media (max-width: 1068px) { */
 
     .section-one {
         justify-content: center;
         flex-wrap: wrap;
+        padding-bottom: 64px;
+
     }
 
     .image-left picture img {
-        width: 100%;
-        height: auto;
+        //width: 100%;
+        //height: auto;
         max-width: 100%;
         margin: 0px auto;
     }
@@ -314,6 +343,7 @@ footer h2,
 
     .group-chat h1 {
         font-size: 48px;
+        margin-top: 72px;
     }
 
     .buttons-section {
@@ -322,12 +352,9 @@ footer h2,
         min-width: 371px;
     }
 
-    .button-long {
-        min-width: 193px;
-    }
-
-    .button-short {
-        max-width: 161px;
+    .section-two {
+        padding-top: 56px;
+        padding-bottom: 64px;
     }
 
 
@@ -370,9 +397,20 @@ footer h2,
 
     footer {
         padding: 64px 32px;
-        /* Less padding on smaller screens */
+
     }
 }
+
+@media(max-width: 768px) {
+    footer {
+        background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(assets/tablet/image-footer.jpg);
+
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
 
 @media (max-width: 635px) {
     .image-gallery {
@@ -398,11 +436,18 @@ footer h2,
         justify-content: center;
     }
 
-
 }
 
 
-@media (max-width:456px) {
+@media (max-width:424px) {
+
+    .section-one {
+        padding-bottom: 32px;
+    }
+
+    .section-two {
+        padding-top: 32x;
+    }
 
     .group-chat h1 {
         font-size: 32px;
@@ -411,16 +456,23 @@ footer h2,
 
     .group-chat p {
         width: 270px;
-
     }
 
     .buttons-section .button-short {
         margin-top: 10px;
     }
+
+    footer {
+        background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(assets/mobile/image-footer.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 482px;
+    }
+
+
 }
 
 @media (max-width: 350px) {
-
 
     .image-gallery {
         max-width: 270px;
@@ -429,7 +481,6 @@ footer h2,
     .image-gallery img {
         max-width: 130px;
     }
-
 
     .image-gallery .pic3,
     .image-gallery .pic4 {
