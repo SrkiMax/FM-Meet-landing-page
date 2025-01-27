@@ -453,15 +453,13 @@ footer h2,
         background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(assets/mobile/image-footer.jpg);
         background-size: cover;
         background-position: center;
-        height: 374px;
+
     }
 
     .footer-info-box h2 {
         font-size: 30px;
         max-width: 445px;
     }
-
-
 
 
 }
